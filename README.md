@@ -13,6 +13,7 @@ npm install --save https://github.com/usuket/exponential_backoff_wrapper.git
 ## maintenance
 ```bash
 npm test
+npm lint
 ```
 
 ```javascript

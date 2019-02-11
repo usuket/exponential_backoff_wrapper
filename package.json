@@ -4,7 +4,9 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "ava --verbose"
+    "test": "ava --verbose",
+    "check": "node_modules/prettier/bin-prettier.js src/* test/* --check",
+    "lint": "node_modules/prettier/bin-prettier.js src/* test/* --write"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
     "ava": "^1.2.1",
     "axios": "^0.18.0",
     "mockserver": "^3.0.0",
-    "node-fetch": "^2.3.0"
+    "node-fetch": "^2.3.0",
+    "prettier": "^1.16.4"
   }
 }

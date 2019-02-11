@@ -6,8 +6,8 @@ const DEFAULT_LOG_ENABLED = false;
 /**
  * @return {number}
  */
-const DEFAULT_WAIT_FUNC = function () {
-  return (this.retryCount * this.retryCount) * 1000
+const DEFAULT_WAIT_FUNC = function() {
+  return this.retryCount * this.retryCount * 1000;
 };
 
 class ExponentialRequestDriver {
@@ -33,7 +33,11 @@ class ExponentialRequestDriver {
         // It cause exception when status code is not 200.
         return await func(...arg);
       } catch (e) {
-        this.logger.info(`${this.retryCount}/${this.limit}, it will retry automatically within ${sleepSec / 1000} sec. ${e}`);
+        this.logger.info(
+          `${this.retryCount}/${
+            this.limit
+          }, it will retry automatically within ${sleepSec / 1000} sec. ${e}`
+        );
         this.errors.push(e);
       }
 

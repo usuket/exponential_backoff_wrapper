@@ -1,0 +1,26 @@
+{
+  "name": "exponential_backoff_wrapper",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usuket/exponential_backoff_wrapper.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/usuket/exponential_backoff_wrapper/issues"
+  },
+  "homepage": "https://github.com/usuket/exponential_backoff_wrapper#readme",
+  "dependencies": {
+    "await-sleep": "0.0.1"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "node-fetch": "^2.3.0"
+  }
+}

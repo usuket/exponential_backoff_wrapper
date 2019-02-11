@@ -4,6 +4,24 @@ Simple exponential backoff wrapper
 
 It will call a function repeatedly.
 
+## install
+```bash
+npm install --save https://github.com/usuket/exponential_backoff_wrapper.git
+```
+
+```javascript
+// js
+const ExponentialRequestDriver = require("../src/index");
+const driver = ExponentialRequestDriver.getInstance();
+const axios = require("axios");
+
+driver.run(axios.post, "URL_HEE").then(response => {
+  console.log(response)
+}).catch(err =>{
+  console.log(err);
+});
+```
+
 
 ## default back off strategy
 

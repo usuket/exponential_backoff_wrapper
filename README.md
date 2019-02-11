@@ -1,11 +1,18 @@
 # exponential_backoff_wrapper
 
+[![CircleCI](https://circleci.com/gh/usuket/exponential_backoff_wrapper/tree/master.svg?style=svg)](https://circleci.com/gh/usuket/exponential_backoff_wrapper/tree/master)
+
 Simple exponential backoff wrapper.  
 Accept various type of http request libraries.  
  
 ## install
 ```bash
 npm install --save https://github.com/usuket/exponential_backoff_wrapper.git
+```
+
+## maintenance
+```bash
+npm test
 ```
 
 ```javascript

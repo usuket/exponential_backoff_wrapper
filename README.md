@@ -1,9 +1,8 @@
 # exponential_backoff_wrapper
 
-Simple exponential backoff wrapper
-
-It will call a function repeatedly.
-
+Simple exponential backoff wrapper.  
+Accept various type of http request libraries.  
+ 
 ## install
 ```bash
 npm install --save https://github.com/usuket/exponential_backoff_wrapper.git
@@ -15,7 +14,8 @@ const ExponentialRequestDriver = require("../src/index");
 const driver = ExponentialRequestDriver.getInstance();
 const axios = require("axios");
 
-driver.run(axios.post, "URL_HEE").then(response => {
+// It will call a function repeatedly.
+driver.run(axios.post, "URL_HERE").then(response => {
   console.log(response)
 }).catch(err =>{
   console.log(err);

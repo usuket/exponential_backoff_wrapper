@@ -18,7 +18,7 @@ npm lint
 
 ```javascript
 // js
-const ExponentialRequestDriver = require("../src/index");
+const ExponentialRequestDriver = require("exponential_backoff_wrapper");
 const driver = ExponentialRequestDriver.getInstance();
 const axios = require("axios");
 
